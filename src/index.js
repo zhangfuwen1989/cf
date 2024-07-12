@@ -4,18 +4,18 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "docker.boown.com": "https://registry-1.docker.io",
-  "quay.boown.com": "https://quay.io",
-  "gcr.boown.com": "https://gcr.io",
-  "k8s-gcr.boown.com": "https://k8s.gcr.io",
-  "k8s.boown.com": "https://registry.k8s.io",
-  "ghcr.boown.com": "https://ghcr.io",
-  "cloudsmith.boown.com": "https://docker.cloudsmith.io",
-  "pypi.boown.com": "https://pypi.org",
-  "npmjs.boown.com": "https://registry.npmjs.org",
-  "cnpmjs.boown.com": "http://r.cnpmjs.org",
+ "dockerhub.bugaoxing.com": "https://registry-1.docker.io",
+ "quay.bugaoxing.com": "https://quay.io",
+ "gcr.bugaoxing.com": "https://gcr.io",
+ "k8s-gcr.bugaoxing.com": "https://k8s.gcr.io",
+ "k8s.bugaoxing.com": "https://registry.k8s.io",
+ "ghcr.bugaoxing.com": "https://ghcr.io",
+ "cloudsmith.bugaoxing.com": "https://docker.cloudsmith.io",
+ "pypi.bugaoxing.com": "https://pypi.org",
+ "npmjs.bugaoxing.com": "https://registry.npmjs.org",
+ "cnpmjs.bugaoxing.com": "http://r.cnpmjs.org",
 };
-
+//"hub.docker.bugaoxing.com": "https://hub.docker.com",
 function routeByHosts(host) {
   if (host in routes) {
     return routes[host];
